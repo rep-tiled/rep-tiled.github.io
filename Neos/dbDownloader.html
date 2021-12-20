@@ -29,9 +29,11 @@
     </header>
 </head>
 
+<!--https://cloudxstorage.blob.core.windows.net/assets/
+    neosdb:///63b468da60e060625f06ce0842f308d339a230ac967300aed7eea12096826b0d.7zbson-->
+
 <body>
-    https://cloudxstorage.blob.core.windows.net/assets/
-    neosdb:///63b468da60e060625f06ce0842f308d339a230ac967300aed7eea12096826b0d.7zbson
+    
     <form id="form" onsubmit="return false;">
         <input type="text" id="userInput" />
         <input type="submit" onclick="othername();" />
@@ -42,7 +44,7 @@
         var input = document.getElementById("userInput").value;
         let result = input.replace("neosdb:///", "");
         let s = result.substring(0, result.indexOf('.'));
-        alert(s);
+        window.location.replace("https://cloudxstorage.blob.core.windows.net/assets/"+s);
     }
     </script>
 </body>
