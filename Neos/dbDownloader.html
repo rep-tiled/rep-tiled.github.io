@@ -51,8 +51,13 @@
     function othername() {
         var input = document.getElementById("userInput").value;
         let result = input.replace("neosdb:///", "");
+
+        if (result.includes(".")){
         let s = result.substring(0, result.indexOf('.'));
         window.location.replace("https://cloudxstorage.blob.core.windows.net/assets/"+s);
+        } else {
+        window.location.replace("https://cloudxstorage.blob.core.windows.net/assets/"+result)   
+        }
     }
     </script>
 </body>
