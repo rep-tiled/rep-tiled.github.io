@@ -61,5 +61,15 @@ fetch("https://www.neosvr-api.com/api/users/U-alizard", {
 });
 </script>
 -->
+<script>
+const Http = new XMLHttpRequest();
+const url='https://www.neosvr-api.com/api/users/U-alizard';
+Http.open("GET", url);
+Http.send();
+
+Http.onreadystatechange = (e) => {
+  console.log(Http.responseText)
+}
+</script>
 
 </body>
