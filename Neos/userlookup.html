@@ -32,21 +32,6 @@
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-<script>
-var baseurl = "https://api.neos.com/api/users";
-function loadPersons(){
-  var xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("GET", baseurl + "/U-alizard", true);
-  xmlhttp.onreadystatechange = function() {
-    if (xmlhttp.readyState === 4 && xmlhttp.status===200){
-      var persons = JSONparse(xmlhttp.responseText);
-      
-    }
-  }
-}
-
-</script>
-
 </head>
 
 <body>
