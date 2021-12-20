@@ -57,6 +57,7 @@ fetch('https://api.neos.com/api/users')
 
 
 <script>
+
     fetch("https://api.neos.com/api/users/U-alizard", {
   "method": "GET",
   "mode": 'no-cors',
@@ -71,6 +72,9 @@ fetch('https://api.neos.com/api/users')
 .catch(err => {
   console.error(err);
   console.error("error code: get fucked");
+})
+response.json().then(data => {
+  // do something with your data
 });
 </script>
 
