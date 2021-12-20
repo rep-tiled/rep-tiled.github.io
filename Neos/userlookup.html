@@ -40,22 +40,6 @@
         </div>
     </div>
 
-<script>
-async function fetchTest() {
-    let response = await fetch('https://www.neosvr-api.com/api/users/U-alizard', {
-        "mode": 'no-cors'
-    });
-    let responseText = await response.text();
-    console.log(response.text)
-
-    document.getElementById('result').innerHTML = responseText;
-}
-
-(async() => {
-    await fetchTest();
-})();
-</script>
-
 <div id="result"></div>
 <!--
 <script>
