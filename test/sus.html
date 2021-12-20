@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+<title>run</title> 
+
+<script src= 
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> 
+	</script> 
+
+	<script> 
+		/* Add "https://api.ipify.org?format=json" This method uses ipify.org api to get the clients IP Address. 
+		This method is completely free and no limitations of use. */ 
+
+		$.getJSON("https://api.ipify.org?format=json", 
+										function(data) { 
+
+			// userip element is where the IP will be displayed
+			$("#userip").html(data.ip); 
+		}) 
+	</script> 
+
+</head>
+<body>
+    <div style="font-size:99rem;width:0%;">🦎</div>
+</body>
+
+
+<div style="background-image: url('img_girl.jpg');">
