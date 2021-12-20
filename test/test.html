@@ -6,7 +6,13 @@
     <h1>Ignore this page</h1>
     <h2>lol</h2>
 
+    <p id="die" onclick="myFunction()">Click me or else!</p>
+    
     <script>
-        alert( 'you have 5 hours' );
+
+function myFunction() {
+  document.getElementById("die").style.color = "red";
+  alert( 'you have 5 hours' );
+}
     </script>
 </body>
