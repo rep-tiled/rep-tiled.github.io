@@ -8,10 +8,18 @@
 
     <p id="die" onclick="myFunction()">Click me or else!</p>
 
+    <br>
+
+    <input type="text" id="keydown" onkeydown="keydown()">
     <script>
+//click me pop up//
 function myFunction() {
   document.getElementById("die").style.color = "red";
   alert( 'you have 5 hours' );
+}
+
+function keydown() {
+  document.getElementById("keydown").style.backgroundColor = "red";
 }
     </script>
 </body>
