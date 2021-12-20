@@ -41,11 +41,8 @@
     </div>
 
 
-
-<!--
-    test 1
 <script>
-fetch("https://www.neosvr-api.com/api/users/U-alizard", {
+    fetch("https://www.neosvr-api.com/api/users/U-alizard", {
   "method": "GET",
   "headers": {
     "Content-Type": "application/json"
@@ -53,23 +50,12 @@ fetch("https://www.neosvr-api.com/api/users/U-alizard", {
 })
 .then(response => {
   console.log(response);
-  console.log("POG");
+  console.log("pog it loaded");
 })
 .catch(err => {
   console.error(err);
-  console.error("get fucked");
+  console.error("error code: get fucked");
 });
-</script>
--->
-<script>
-const Http = new XMLHttpRequest();
-const url='https://www.neosvr-api.com/api/users/U-alizard';
-Http.open("GET", url);
-Http.send();
-
-Http.onreadystatechange = (e) => {
-  console.log(Http.responseText)
-}
 </script>
 
 </body>
