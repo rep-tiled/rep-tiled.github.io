@@ -39,31 +39,17 @@
         There will be stuff here
         </div>
     </div>
-<!--
-<script>
-fetch('https://api.neos.com/api/users')
-    .then(res => {res.json
-    if (res.ok) {
-       console.log('SUCCESS') 
-    } else {
-        console.log('couldnt get data, epic fail')
-    }
-    })
-    .then(data => console.log(data))
-    .catch(error => console.log('error code: get fucked!'))
-
-</script>
--->
 
 
 <script>
 
-    fetch("https://api.neos.com/api/users/U-alizard", {
+    fetch("https://api.neos.com/api/users/U-alizard?format=json", {
   "method": "GET",
   "mode": 'no-cors',
   "headers": {
     "Content-Type": "application/json"
-  }
+  },
+
 })
 .then(response => {
   console.log(response);
@@ -72,9 +58,8 @@ fetch('https://api.neos.com/api/users')
 .catch(err => {
   console.error(err);
   console.error("error code: get fucked");
-})
+});
 </script>
-
 
 
 </body>
