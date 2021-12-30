@@ -1,0 +1,17 @@
+/*vars*/
+:root {
+    --text-color: white;
+    --background-color: #1E1E1E;
+
+    scroll-behavior: smooth;
+}
+
+/*main css*/
+body {
+    background-color: var(--background-color);
+  }
+
+  h1{
+    color: var(--text-color);
+    font-family: Helvetica;
+  }
