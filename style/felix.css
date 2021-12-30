@@ -11,7 +11,18 @@ body {
     background-color: var(--background-color);
   }
 
-  h1{
-    color: var(--text-color);
-    font-family: Helvetica;
-  }
+.boxBack{
+  background-color: rgba(0, 0, 0, 0.664) ;
+  color: white;
+  font-family:helvetica;
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1%;
+  margin-top: 2%;
+}
+
+/*overs*/
+a { 
+    color:white 
+}
