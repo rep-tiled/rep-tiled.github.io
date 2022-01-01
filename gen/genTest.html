@@ -1,13 +1,40 @@
-<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
-    Your browser does not support the HTML5 canvas tag.</canvas>
-    
-    <script>
-    
-    var c=document.getElementById("myCanvas");
-    var ctx=c.getContext("2d");
-    ctx.font="30px Arial";
-    ctx.fillText("alizard",10,50);
-    
-    // save img
-    Canvas2Image.saveAsImage(c, 200, 100, 'png');
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+
+
+    <script src="./canvas2image.js"></script>
+</head>
+<body>
+    <script type="text/javascript">
+        
     </script>
+
+    <canvas id="myCanvas" width="400" height="100" style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML5 canvas tag.</canvas>
+        
+        <script>
+            window.onload = function () {
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "https://api.ipify.org?format=jsonp&callback=DisplayIP";
+            document.getElementsByTagName("head")[0].appendChild(script);
+        };
+        function DisplayIP(response) {
+        var z = response.ip;
+        var c=document.getElementById("myCanvas");
+        var ctx=c.getContext("2d");
+        ctx.font="30px Arial";
+        ctx.fillText(z,10,50);
+        
+        
+        // save img
+        Canvas2Image.saveAsImage(c, 200, 100, 'png');  
+        }
+        
+        </script>
+    
+</body>
+</html>
