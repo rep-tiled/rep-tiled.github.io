@@ -2,5 +2,18 @@
     "name":"Lizard",
     "site":"rep-tiled.tk",
     "image":"https://i.imgur.com/EgSAdk7.png",
-    "pronouns":"he/they"
+    "pronouns":"he/they",
+    "extensions":{
+        "socialMedia":{
+            "twitter":{
+                "link":"https://twitter.com/alizardguy",
+                "name":"alizard 🦎",
+                "handle":"@alizard"
+            },
+            "neos":{
+                "username":"alizard",
+                "userID":"U-alizard"
+            }
+        }
+    }
 }
