@@ -3,6 +3,10 @@
     "site":"rep-tiled.tk",
     "image":"https://i.imgur.com/EgSAdk7.png",
     "pronouns":"he/they",
+    "birthday": "xxxx-05-28",
+    "people": [
+		"psychpsyo.tk"
+	],
     "extensions":{
         "socialMedia":{
             "twitter":{
