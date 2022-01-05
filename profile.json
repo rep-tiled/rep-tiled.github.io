@@ -19,6 +19,10 @@
                 "username":"alizard",
                 "userID":"U-alizard"
             }
+        },
+        "profileNiceties":{
+            "bio":"I a lizard dude :D",
+            "bannerImage":"https://i.imgur.com/u4UjPrI.jpg"
         }
     }
 }
