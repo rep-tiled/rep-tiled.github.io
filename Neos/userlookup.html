@@ -1,7 +1,13 @@
 <!DOCTYPE html>
+<!--head-->
 <head>
-<title>In Neos</title>
-
+<!--meta-->
+<link rel="stylesheet" href="../style/felix.css">
+<title>DB download</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--script-->
+<script src="../assets/jquery.js"></script>
+<!--background image-->
 <style>
     body {
       background-image: url('https://i.imgur.com/6VlO9wJ.jpg');
@@ -9,92 +15,38 @@
       background-attachment: fixed;
       background-size: cover;
     }
-
-    #mainbox {
-  background-color: rgba(0, 0, 0, 0.664) ;
-  padding: 30px ;
-  border: 0px solid rgb(0, 0, 0) ;
-  color: white;
-  font-family:helvetica;
-  text-align: center;
-  width: 900px;
-  margin: 0 auto;
-
-}
-
-
-
-    </style>
-
-<header class="page-header">
-    <a href="../index.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Neos_VR_Logo.png/1018px-Neos_VR_Logo.png" alt="HTML tutorial" style="width:50px;height:50px;"></a>
-</header>
-
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
+</style>
 </head>
-
+<!--body-->
 <body>
-    <div class="container">
-    <!--Center Box-->
-    <div id="mainbox">
-        There will be stuff here
-        </div>
+    <header class="page-header">
+        <a href="../directory/blocks.html"><img src="https://i.imgur.com/jPa5ckS.png" alt="Neos logo" style="width:50px;height:50px;"></a>
+    </header>
+
+    <div class="boxBack">
+        <h1>input neos db link</h1>
+          
+            
+        
     </div>
-
-<div id="fuck"></div>
-
-
-
-<!--
-<script>
-  
-   var request = fetch("http://api.neos.com/api/users/U-alizard", {
+    
+    <script>
+  const settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://www.neosvr-api.com/api/users/U-alizard",
   "method": "GET",
-  "mode": 'no-cors',
   "headers": {
-    "Content-Type": "text/plain"
-  },
+  "Content-Type": "application/json",
+  "Origin:":"https://rep-tiled.tk"
+  }
+};
 
-})
-
-request.then(response => {
-  console.log(response)
-  console.log("pog it loaded");
-})
-request.catch(err => {
-  console.error(err);
-  console.error("error code: get fucked");
+$.ajax(settings).done(function (response) {
+  console.log(response);
+  alert("fuck");
 });
 
-</script>
--->
 
-<div id="id01"></div>
-
-<script>
-var xmlhttp = new XMLHttpRequest();
-var url = "http://api.neos.com/api/users/U-alizard";
-
-xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-        var myArr = JSON.parse(this.responseText);
-        myFunction(myArr);
-    }
-};
-xmlhttp.open("GET", url, true, );
-xmlhttp.send();
-
-function myFunction(arr) {
-    var out = "";
-    var i;
-    for(i = 0; i < arr.length; i++) {
-        out += '<a href="' + arr[i].url + '">' +
-        arr[i].display + '</a><br>';
-    }
-    document.getElementById("id01").innerHTML = out;
-}
-</script>
-
-
+    </script>
 </body>
