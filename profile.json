@@ -18,7 +18,11 @@
             "neos":{
                 "username":"alizard",
                 "userID":"U-alizard"
-            }
+            },
+            "github": {
+				"name": "alizardguy",
+				"link": "https://github.com/alizardguy"
+			}
         },
         "profileNiceties":{
             "bio":"I a lizard dude :D",
