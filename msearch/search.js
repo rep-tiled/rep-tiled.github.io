@@ -7,7 +7,10 @@ let cards = []
 
 searchInput.addEventListener("input", e => {
     const value = e.target.value;
-    console.log(cards);
+    user.array.forEach(data => {
+        const isVisible = data.title.includes(value); 
+        data.element.classList.toggle("hide", !isVisible);
+    });
 })
 
 fetch("https://rep-tiled.tk/msearch/data.json")
