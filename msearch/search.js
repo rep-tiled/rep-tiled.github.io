@@ -6,8 +6,8 @@ const searchInput = document.querySelector("[data-search]");
 let cards = []
 
 searchInput.addEventListener("input", e => {
-    const value = e.target.value;
-    user.array.forEach(data => {
+    const value = e.target.value.toLowerCase();
+    cards.forEach(data => {
         const isVisible = data.title.includes(value); 
         data.element.classList.toggle("hide", !isVisible);
     });
@@ -16,12 +16,12 @@ searchInput.addEventListener("input", e => {
 fetch("https://rep-tiled.tk/msearch/data.json")
     .then(res => res.json())
     .then(data =>{
-        cards = data.map(user => {
+        cards = data.map(data => {
         const card = cardTemplate.content.cloneNode(true).children[0];
         const header = card.querySelector("[data-header]");
         const body = card.querySelector("[data-body]");
-        header.textContent = user.title
-        header.textContent = user.url
+        header.textContent = data.title
+        body.textContent = data.url
         cardContainer.append(card);
         return { title: data.title, url: data.url, element: card}
         });
