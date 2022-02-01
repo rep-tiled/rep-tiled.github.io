@@ -10,16 +10,16 @@
 <body>
     <div class="search-wrapper">
         <label for="search">Search rep-tiled</label>
-        <input type="search" id="search">
+        <input type="search" id="search" data-search>
     </div>
 
-    <div class="cards"></div>
+    <div class="cards" data-cards-container></div>
         
     <!--card template-->
     <template data-card-template>
         <div class ="card">
-            <div class="header">Name</div>
-            <div class="body">blurb</div>
+            <div class="header" data-header></div>
+            <div class="body" data-body></div>
         </div>
     </template>
 </body>
