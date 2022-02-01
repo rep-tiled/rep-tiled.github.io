@@ -22,6 +22,7 @@ fetch("https://rep-tiled.tk/msearch/data.json")
         const body = card.querySelector("[data-body]");
         header.textContent = data.title.toLowerCase();
         body.textContent = data.url
+        body.href= "https://" + data.url
         cardContainer.append(card);
         return { title: data.title, url: data.url, element: card}
         });
