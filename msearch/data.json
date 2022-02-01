@@ -4,6 +4,12 @@
         "title": "Home",
         "url": "rep-tiled.tk",
         "type": "rep-tiled page"
+    },
+    {
+        "id": 2,
+        "title": "alizardguy youtube",
+        "url": "https://www.youtube.com/alizardguy",
+        "type": "youtube"
     }
 
   ]
