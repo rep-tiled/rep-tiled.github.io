@@ -7,20 +7,20 @@ let cards = []
 
 searchInput.addEventListener("input", e => {
     const value = e.target.value;
-    console.log(value);
+    console.log(cards);
 })
 
 fetch("https://rep-tiled.tk/msearch/data.json")
     .then(res => res.json())
     .then(data =>{
-        card = data.map(user => {
+        cards = data.map(user => {
         const card = cardTemplate.content.cloneNode(true).children[0];
         const header = card.querySelector("[data-header]");
         const body = card.querySelector("[data-body]");
         header.textContent = user.name
         header.textContent = user.email
         cardContainer.append(card);
-        return { title: data.title, url: data.url}
+        return { title: data.title, url: data.url, element: card}
         });
         
         
