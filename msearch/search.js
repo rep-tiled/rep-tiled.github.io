@@ -17,8 +17,8 @@ fetch("https://rep-tiled.tk/msearch/data.json")
         const card = cardTemplate.content.cloneNode(true).children[0];
         const header = card.querySelector("[data-header]");
         const body = card.querySelector("[data-body]");
-        header.textContent = user.name
-        header.textContent = user.email
+        header.textContent = user.title
+        header.textContent = user.url
         cardContainer.append(card);
         return { title: data.title, url: data.url, element: card}
         });
