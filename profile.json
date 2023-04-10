@@ -1,13 +1,14 @@
 {
     "name":"Lizard",
-    "site":"rep-tiled.tk",
+    "site":"rep-tiled.github.io",
     "image":"https://i.imgur.com/EgSAdk7.png",
-    "pronouns":"he",
+    "pronouns":"he/they",
     "birthday": "xxxx-05-28",
     "people": [
 		"psychpsyo.tk",
         "www.hidi.tk",
-        "punapple.tk"
+        "punapple.tk",
+        "alizardguy.github.io"
 	],
     "extensions":{
         "socialMedia":{
@@ -23,11 +24,16 @@
             "github": {
 				"name": "alizardguy",
 				"link": "https://github.com/alizardguy"
-			}
+			},
+            "othersite":{
+                "name":"github site",
+                "link":"https://alizardguy.github.io"
+            }
         },
         "profileNiceties":{
             "bio":"I am a lizard dude :D",
-            "bannerImage":"https://i.imgur.com/u4UjPrI.jpg"
+            "bannerImage":"https://i.imgur.com/u4UjPrI.jpg",
+            "lastEdited":"April 10th 2023"
         }
     }
 }
